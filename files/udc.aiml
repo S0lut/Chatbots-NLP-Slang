@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+   
+  <category>
+    <pattern>HAI</pattern>
+    <template>Hai! Apa kabar? Ada yang bisa saya bantu hari ini?</template>
+  </category>
+  
+  <category>
+    <pattern>HALO</pattern>
+    <template>Halo! Senang bertemu dengan Anda. Bagaimana hari Anda?</template>
+  </category>
+  
+  <category>
+    <pattern>HI</pattern>
+    <template>Hi! Salam kenal. Ada yang ingin dibicarakan?</template>
+  </category>
+  
+  <category>
+    <pattern>SELAMAT PAGI</pattern>
+    <template>Selamat pagi! Semoga hari Anda menyenangkan. Sudah sarapan?</template>
+  </category>
+  
+  <category>
+    <pattern>SELAMAT SIANG</pattern>
+    <template>Selamat siang! Bagaimana aktivitas Anda hari ini?</template>
+  </category>
+  
+  <category>
+    <pattern>SELAMAT SORE</pattern>
+    <template>Selamat sore! Hari ini pasti melelahkan ya? Semoga bisa istirahat sebentar.</template>
+  </category>
+  
+  <category>
+    <pattern>SELAMAT MALAM</pattern>
+    <template>Selamat malam! Sudah waktunya istirahat. Tidur yang nyenyak ya!</template>
+  </category>
+  
+  
+  <category>
+    <pattern>APA KABAR</pattern>
+    <template>Baik, terima kasih! Bagaimana dengan Anda?</template>
+  </category>
+  
+  <category>
+    <pattern>KABAR BAIK</pattern>
+    <template>Wah, senang mendengarnya! Semoga tetap seperti itu ya.</template>
+  </category>
+  
+  <category>
+    <pattern>BAGAIMANA KABARMU</pattern>
+    <template>Saya baik-baik saja, terima kasih sudah bertanya! Kamu sendiri bagaimana?</template>
+  </category>
+  
+  <category>
+    <pattern>SAYA BAIK</pattern>
+    <template>Syukurlah kalau begitu! Ada yang ingin diceritakan?</template>
+  </category>
+  
+  <category>
+    <pattern>SAYA SEDIH</pattern>
+    <template>Turut prihatin mendengarnya. Mau cerita apa yang terjadi? Mungkin saya bisa membantu.</template>
+  </category>
+  
+  <category>
+    <pattern>SAYA SENANG</pattern>
+    <template>Wah, saya ikut senang mendengarnya! Ada kabar baik apa nih?</template>
+  </category>
+  
+  <category>
+    <pattern>SAYA LELAH</pattern>
+    <template>Sepertinya Anda perlu istirahat. Jangan terlalu memaksakan diri ya. Sudah coba istirahat sebentar?</template>
+  </category>
+  
+  <category>
+    <pattern>SAYA BOSAN</pattern>
+    <template>Bosan ya? Mau coba cari aktivitas baru atau ngobrol santai aja?</template>
+  </category>
+  
+  
+  <category>
+    <pattern>SIAPA NAMAMU</pattern>
+    <template>Nama saya Bot. Senang berkenalan dengan Anda! Nama Anda siapa?</template>
+  </category>
+  
+  <category>
+    <pattern>NAMA SAYA *</pattern>
+    <template>Oke, <set name="nama"><star/></set>! senang berkenalan dengan Anda! Panggil saya Bot saja.</template>
+  </category>
+  
+  <category>
+      <pattern>SIAPA NAMA SAYA</pattern>
+      <template>Nama kamu <get name="nama"/>.</template>
+  </category>
+  
+  <category>
+    <pattern>SALAM KENAL</pattern>
+    <template>Salam kenal juga! Semoga kita bisa ngobrol dengan santai dan menyenangkan.</template>
+  </category>
+  
+  
+  <category>
+    <pattern>SEDANG APA</pattern>
+    <template>Saya sedang siap membantu Anda! Kamu sendiri sedang apa?</template>
+  </category>
+  
+  <category>
+    <pattern>SUDAH MAKAN</pattern>
+    <template>Sudah dong! Kamu sudah makan belum? Jangan sampai telat makan ya.</template>
+  </category>
+  
+  <category>
+    <pattern>BELUM MAKAN</pattern>
+    <template>Wah, segera makan ya! Jangan sampai sakit. Mau makan apa?</template>
+  </category>
+  
+  <category>
+    <pattern>MAU MAKAN *</pattern>
+    <template>Wah, <star/> enak tuh! Selamat menikmati makanannya ya!</template>
+  </category>
+  
+  <category>
+    <pattern>LAGI KERJA</pattern>
+    <template>Semangat kerja! Jangan lupa istirahat sebentar ya. Pekerjaannya banyak?</template>
+  </category>
+  
+  <category>
+    <pattern>LAGI SANTAI</pattern>
+    <template>Enak ya bisa santai. Lagi ngapain nih, nonton atau main game?</template>
+  </category>
+  
+  
+  <category>
+    <pattern>CUACA HARI INI</pattern>
+    <template>Saya tidak bisa melihat cuaca secara langsung, tapi bagaimana cuaca di tempat Anda? Cerah atau hujan?</template>
+  </category>
+  
+  <category>
+    <pattern>HARI INI PANAS</pattern>
+    <template>Wah panas ya? Jangan lupa minum air putih yang banyak dan pakai sunscreen kalau keluar rumah!</template>
+  </category>
+  
+  <category>
+    <pattern>HARI INI HUJAN</pattern>
+    <template>Hujan ya? Enaknya sambil minum kopi atau teh hangat nih. Hati-hati kalau mau keluar rumah!</template>
+  </category>
+  
+  
+  <category>
+    <pattern>APA HOBIMU</pattern>
+    <template>Saya suka mengobrol dengan orang-orang seperti Anda! Hobi kamu apa?</template>
+  </category>
+  
+  <category>
+    <pattern>SAYA SUKA *</pattern>
+    <template>Oh, Anda suka <star/>? Menarik sekali! Sudah lama suka <star/>?</template>
+  </category>
+  
+  <category>
+    <pattern>SUKA MUSIK</pattern>
+    <template>Wah, saya juga suka musik! Genre favorit kamu apa nih?</template>
+  </category>
+  
+  <category>
+    <pattern>SUKA FILM</pattern>
+    <template>Film apa yang paling berkesan buat kamu? Saya suka mendengar rekomendasi film!</template>
+  </category>
+  
+  <category>
+    <pattern>SUKA GAME</pattern>
+    <template>Game apa yang lagi kamu mainkan sekarang? Pasti seru ya!</template>
+  </category>
+  
+  
+  <category>
+    <pattern>TERIMA KASIH</pattern>
+    <template>Sama-sama! Senang bisa membantu. Ada lagi yang bisa saya bantu?</template>
+  </category>
+  
+  <category>
+    <pattern>THANKS</pattern>
+    <template>You're welcome! Kapan-kapan ngobrol lagi ya!</template>
+  </category>
+  
+  <category>
+    <pattern>MAKASIH</pattern>
+    <template>Sama-sama! Jangan sungkan kalau butuh bantuan lagi.</template>
+  </category>
+  
+  <category>
+    <pattern>MAAF</pattern>
+    <template>Nggak apa-apa kok, santai aja! Tidak perlu minta maaf.</template>
+  </category>
+  
+  
+  <category>
+    <pattern>TOLONG</pattern>
+    <template>Tenang, saya siap membantu! Ada masalah apa yang bisa saya bantu?</template>
+  </category>
+  
+  <category>
+    <pattern>BANTU SAYA</pattern>
+    <template>Dengan senang hati! Ceritakan masalahnya, akan saya bantu semampu saya.</template>
+  </category>
+  
+  <category>
+    <pattern>HELP</pattern>
+    <template>Saya di sini untuk membantu! Apa yang bisa saya lakukan untuk Anda?</template>
+  </category>
+  
+  
+  <category>
+    <pattern>BYE</pattern>
+    <template>Bye! Sampai jumpa lagi. Semoga harimu menyenangkan!</template>
+  </category>
+  
+  <category>
+    <pattern>DADAH</pattern>
+    <template>Dadah! Hati-hati di jalan ya. Sampai ketemu lagi!</template>
+  </category>
+  
+  <category>
+    <pattern>SAMPAI JUMPA</pattern>
+    <template>Sampai jumpa! Terima kasih sudah ngobrol. Jaga diri baik-baik ya!</template>
+  </category>
+  
+  <category>
+    <pattern>SELAMAT TINGGAL</pattern>
+    <template>Selamat tinggal! Semoga sukses selalu. Kapan-kapan chat lagi!</template>
+  </category>
+  
+  
+  <category>
+    <pattern>KAMU BAIK</pattern>
+    <template>Terima kasih! Kamu juga baik kok. Senang bisa membantu Anda.</template>
+  </category>
+  
+  <category>
+    <pattern>KAMU PINTAR</pattern>
+    <template>Terima kasih atas pujiannya! Saya berusaha memberikan yang terbaik.</template>
+  </category>
+  
+  <category>
+    <pattern>KAMU LUCU</pattern>
+    <template>Hehe, terima kasih! Saya senang bisa menghibur Anda.</template>
+  </category>
+  
+  
+  <category>
+    <pattern>APA ITU *</pattern>
+    <template>Hmm, <star/> ya? Itu topik yang menarik. Coba saya jelaskan secara sederhana: biasanya <star/> adalah sesuatu yang berkaitan dengan konteksnya. Bisa lebih spesifik pertanyaannya?</template>
+  </category>
+  
+  <category>
+    <pattern>BAGAIMANA CARA *</pattern>
+    <template>Untuk <star/>, biasanya ada beberapa langkah yang bisa diikuti. Bisa lebih spesifik tentang aspek mana yang ingin kamu ketahui?</template>
+  </category>
+  
+  <category>
+    <pattern>KAPAN *</pattern>
+    <template>Soal <star/>, saya kurang pasti waktunya. Apakah ada konteks tertentu yang ingin kamu tanyakan?</template>
+  </category>
+  
+  
+  <category>
+    <pattern>YA</pattern>
+    <template>Oke, saya mengerti. Ada yang mau ditambahkan?</template>
+  </category>
+  
+  <category>
+    <pattern>TIDAK</pattern>
+    <template>Baiklah. Kalau ada yang ingin ditanyakan lagi, saya siap membantu.</template>
+  </category>
+  
+  <category>
+    <pattern>MUNGKIN</pattern>
+    <template>Oke, masih dipertimbangkan ya. Semoga bisa segera menemukan keputusan yang tepat!</template>
+  </category>
+  
+  
+  <category>
+    <pattern>CERITA LUCU</pattern>
+    <template>Hmm, gimana ya... Kenapa ayam menyeberang jalan? Karena mau ke seberang! Hehe, maaf kalau kurang lucu.</template>
+  </category>
+  
+  <category>
+    <pattern>HAHA</pattern>
+    <template>Senang bisa membuat Anda tertawa! Ada lagi yang mau dibicarakan?</template>
+  </category>
+  
+  <category>
+    <pattern>LOL</pattern>
+    <template>Wkwkwk, asyik ya! Gimana lagi kabarnya?</template>
+  </category>
+  
+  
+  <category>
+    <pattern>SEMANGAT</pattern>
+    <template>Semangat juga! Kamu pasti bisa! Tetap positif ya!</template>
+  </category>
+  
+  <category>
+    <pattern>CAPEK</pattern>
+    <template>Istirahat dulu ya. Semua orang butuh istirahat. Jangan lupa jaga kesehatan!</template>
+  </category>
+  
+  <category>
+    <pattern>MENYERAH</pattern>
+    <template>Jangan menyerah! Setiap tantangan pasti ada solusinya. Kamu lebih kuat dari yang kamu kira!</template>
+  </category>
+  
+   <category>
+    <pattern>APA TUJUAN PENELITIAN INI</pattern>
+    <template>Dalam penelitian yang saya dan tim buat, kami memiliki tujuan utama untuk merancang dan mengimplementasikan sebuah sistem deteksi dan normalisasi bahasa gaul atau slang dalam teks bahasa Indonesia. Sistem ini dirancang menggunakan arsitektur deep learning, khususnya model Transformer berbasis IndoBERT-base-uncased. Kami berharap sistem ini bisa menjadi solusi untuk mengatasi tantangan pemrosesan teks informal yang semakin masif di era digital, terutama di platform media sosial seperti Instagram, Twitter, dan Facebook. Lebih jauh lagi, kami mengharapkan hasil penelitian ini dapat memberikan kontribusi praktis bagi pengembangan aplikasi NLP berbahasa Indonesia yang lebih robust dan mampu memahami bahasa percakapan sehari-hari dengan lebih baik.</template>
+  </category>
+  
+  <category>
+    <pattern>TUJUAN PENELITIAN</pattern>
+    <template><srai>APA TUJUAN PENELITIAN INI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>PENELITIAN INI TENTANG APA</pattern>
+    <template><srai>APA TUJUAN PENELITIAN INI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>UNTUK APA PENELITIAN INI</pattern>
+    <template><srai>APA TUJUAN PENELITIAN INI</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>APA MASALAH YANG DIANGKAT</pattern>
+    <template>Masalah yang kami angkat dalam penelitian ini sangat relevan dengan kondisi komunikasi digital saat ini. Perkembangan pesat media sosial seperti Instagram, TikTok, dan Twitter telah melahirkan fenomena bahasa gaul atau slang yang digunakan secara luas oleh pengguna internet Indonesia. Kata-kata seperti "gw" untuk "saya", "gk" untuk "tidak", "bgt" untuk "banget", dan berbagai variasi slang lainnya menjadi bagian tak terpisahkan dari komunikasi online. Yang menjadi masalah adalah bahasa tidak baku ini menciptakan hambatan serius bagi sistem Natural Language Processing. Sistem NLP konvensional yang dilatih dengan teks formal kesulitan memahami makna dan konteks dari teks informal ini. Dampaknya cukup signifikan - terjadi penurunan drastis akurasi berbagai aplikasi seperti analisis sentimen, chatbot customer service, sistem rekomendasi, dan berbagai tugas pemrosesan bahasa lainnya. Kami melihat ini sebagai gap yang perlu dijembatani agar teknologi NLP bisa lebih applicable dalam konteks bahasa Indonesia yang dinamis.</template>
+  </category>
+  
+  <category>
+    <pattern>KENAPA PENELITIAN INI DILAKUKAN</pattern>
+    <template><srai>APA MASALAH YANG DIANGKAT</srai></template>
+  </category>
+  
+  <category>
+    <pattern>LATAR BELAKANG PENELITIAN</pattern>
+    <template><srai>APA MASALAH YANG DIANGKAT</srai></template>
+  </category>
+  
+  <category>
+    <pattern>MASALAH PENELITIAN</pattern>
+    <template><srai>APA MASALAH YANG DIANGKAT</srai></template>
+  </category>
+  
+  <category>
+    <pattern>MASALAH APA YANG DITELITI</pattern>
+    <template><srai>APA MASALAH YANG DIANGKAT</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>MENGAPA PENELITIAN INI PENTING</pattern>
+    <template>Penelitian ini memiliki signifikansi yang cukup besar dalam konteks pengembangan teknologi NLP untuk bahasa Indonesia. Pertama, hasil dari penelitian kami diharapkan dapat secara signifikan meningkatkan kemampuan model NLP dalam memahami dan memproses teks informal yang merupakan mayoritas konten di media sosial. Kedua, sistem yang kami kembangkan dapat menjadi komponen preprocessing yang powerful untuk berbagai aplikasi NLP downstream seperti analisis sentimen, klasifikasi teks, deteksi hate speech, dan sistem question-answering. Ketiga, penelitian ini memberikan kontribusi metodologis dengan mengkombinasikan pendekatan rule-based dan deep learning, yang bisa menjadi referensi untuk penelitian serupa di masa depan. Terakhir, mengingat Indonesia adalah salah satu negara dengan pengguna media sosial terbesar di dunia, sistem normalisasi bahasa yang efektif sangat dibutuhkan untuk mendukung berbagai aplikasi bisnis, penelitian, dan layanan publik yang berbasis pada pemahaman bahasa natural.</template>
+  </category>
+  
+  <category>
+    <pattern>PENTINGNYA PENELITIAN INI</pattern>
+    <template><srai>MENGAPA PENELITIAN INI PENTING</srai></template>
+  </category>
+  
+  <category>
+    <pattern>MANFAAT PENELITIAN</pattern>
+    <template><srai>MENGAPA PENELITIAN INI PENTING</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KONTRIBUSI PENELITIAN</pattern>
+    <template><srai>MENGAPA PENELITIAN INI PENTING</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KENAPA HARUS DITELITI</pattern>
+    <template><srai>MENGAPA PENELITIAN INI PENTING</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA MODEL YANG DIGUNAKAN</pattern>
+    <template>Dalam penelitian ini, kami menggunakan IndoBERT sebagai model deep learning utama, tepatnya varian indolem indobert-base-uncased. Pemilihan model ini bukan tanpa alasan yang jelas. IndoBERT adalah model language representation berbasis arsitektur BERT yang secara khusus di-pretrain menggunakan korpus bahasa Indonesia yang sangat besar dan beragam. Model ini memiliki keunggulan luar biasa dalam memahami konteks semantik bahasa Indonesia, bahkan untuk kalimat yang kompleks dan ambigu. Arsitektur Transformer yang menjadi basis IndoBERT memungkinkan model untuk menangkap relasi jarak jauh antar kata dalam sebuah kalimat melalui mekanisme self-attention yang sophisticated. Kami memilih varian base-uncased karena performanya yang seimbang antara akurasi dan efisiensi komputasi, serta fakta bahwa teks media sosial cenderung tidak konsisten dalam penggunaan huruf kapital. IndoBERT memberikan representasi vektor yang kaya makna untuk setiap token, yang kemudian kami manfaatkan untuk menghitung kemiripan semantik dalam proses normalisasi.</template>
+  </category>
+  
+  <category>
+    <pattern>MODEL APA</pattern>
+    <template><srai>APA MODEL YANG DIGUNAKAN</srai></template>
+  </category>
+  
+  <category>
+    <pattern>MODEL APA YANG DIPAKAI</pattern>
+    <template><srai>APA MODEL YANG DIGUNAKAN</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KENAPA PAKAI INDOBERT</pattern>
+    <template>Kami memilih IndoBERT karena beberapa alasan strategis yang sangat penting. Pertama, IndoBERT di-pretrain khusus untuk bahasa Indonesia dengan korpus yang sangat masif mencakup berbagai domain seperti berita, Wikipedia, dan teks web, sehingga pemahamannya terhadap nuansa bahasa Indonesia jauh lebih baik dibanding model multilingual generic seperti mBERT. Kedua, arsitektur Transformer-based memungkinkan model menangkap konteks bidirectional secara simultan, yang sangat penting untuk memahami makna kata slang yang sering bergantung pada konteks kalimat di sekitarnya. Ketiga, performa IndoBERT telah terbukti unggul dalam berbagai benchmark task NLP bahasa Indonesia seperti sentiment analysis, named entity recognition, dan text classification. Keempat, model ini sudah tersedia secara open-source melalui Hugging Face, memudahkan implementasi dan reproduksibilitas penelitian kami. Terakhir, IndoBERT memiliki dokumentasi yang baik dan komunitas yang aktif, sehingga troubleshooting dan pengembangan lebih lanjut menjadi lebih feasible dan sustainable.</template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN INDOBERT</pattern>
+    <template><srai>KENAPA PAKAI INDOBERT</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KEUNGGULAN INDOBERT</pattern>
+    <template><srai>KENAPA PAKAI INDOBERT</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>BAGAIMANA ARSITEKTUR SISTEMNYA</pattern>
+    <template>Arsitektur sistem yang kami rancang mengadopsi pendekatan hibrida yang menggabungkan kekuatan metode rule-based dan deep learning secara cerdas. Sistem ini terdiri dari dua jalur pemrosesan utama yang saling melengkapi. Jalur pertama adalah Fast Path atau jalur berbasis kamus, di mana kami membangun dictionary slang yang berisi lebih dari 100 pasangan kata slang dan kata formalnya yang sudah diverifikasi manual. Ketika sistem menerima input teks, setiap kata akan dicek terlebih dahulu di kamus ini. Jika ditemukan exact match, normalisasi langsung dilakukan dengan mengganti kata tersebut dengan pasangan formalnya. Jalur ini sangat efisien dari segi komputasi karena hanya melakukan lookup operation yang sangat cepat. Jalur kedua adalah Intelligent Path yang menggunakan IndoBERT untuk kata-kata yang tidak ditemukan di kamus dan tidak dikenal sebagai kata formal. Sistem akan mengekstrak embedding vector dari IndoBERT untuk kata tersebut, kemudian menghitung cosine similarity dengan embedding dari kandidat kata formal yang ada di kamus formal. Kata formal dengan similarity score tertinggi dan di atas threshold tertentu, misalnya 0.75, akan dipilih sebagai hasil normalisasi. Jika tidak ada kandidat yang memenuhi syarat, kata asli akan dipertahankan. Kombinasi kedua jalur ini memberikan balance optimal antara kecepatan eksekusi, akurasi normalisasi, dan kemampuan generalisasi terhadap slang baru yang belum terdaftar dalam kamus.</template>
+  </category>
+  
+  <category>
+    <pattern>ARSITEKTUR SISTEM</pattern>
+    <template><srai>BAGAIMANA ARSITEKTUR SISTEMNYA</srai></template>
+  </category>
+  
+  <category>
+    <pattern>CARA KERJA SISTEM</pattern>
+    <template><srai>BAGAIMANA ARSITEKTUR SISTEMNYA</srai></template>
+  </category>
+  
+  <category>
+    <pattern>SISTEM BEKERJA BAGAIMANA</pattern>
+    <template><srai>BAGAIMANA ARSITEKTUR SISTEMNYA</srai></template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN SISTEM HIBRIDA</pattern>
+    <template>Sistem hibrida yang kami rancang menggabungkan dua paradigma yang berbeda namun saling melengkapi dengan sangat baik. Di satu sisi, pendekatan rule-based memberikan presisi tinggi dan kecepatan eksekusi untuk kata slang yang sudah teridentifikasi dan terdaftar. Kamus yang kami compile mencakup kata slang populer yang sering muncul dalam komunikasi media sosial, lengkap dengan normalisasinya yang sudah diverifikasi secara manual oleh tim kami. Proses ini sangat efisien karena hanya melakukan pencocokan langsung tanpa komputasi kompleks. Di sisi lain, pendekatan berbasis IndoBERT memberikan fleksibilitas dan kemampuan generalisasi yang luar biasa. Ketika sistem menemui kata slang yang tidak ada dalam kamus, IndoBERT tidak langsung menyerah atau menandai sebagai error, melainkan mencoba memahami konteks semantik kata tersebut dengan mengekstrak embedding vector berkualitas tinggi. Sistem kemudian mencari kata formal yang paling mirip secara makna dengan menghitung cosine similarity terhadap seluruh kandidat kata formal. Strategi hybrid ini memastikan bahwa sistem tetap efisien untuk kasus umum yang sering terjadi, namun juga robust dan adaptif untuk menangani variasi bahasa yang terus berkembang secara dinamis. Ini seperti memiliki dua lapis pertahanan yang solid lapis pertama cepat dan tepat untuk kasus yang sudah dikenal, lapis kedua cerdas dan adaptif untuk kasus baru yang belum pernah ditemui sebelumnya.</template>
+  </category>
+  
+  <category>
+    <pattern>APA ITU PENDEKATAN HIBRIDA</pattern>
+    <template><srai>JELASKAN SISTEM HIBRIDA</srai></template>
+  </category>
+  
+  <category>
+    <pattern>HYBRID SYSTEM</pattern>
+    <template><srai>JELASKAN SISTEM HIBRIDA</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA ITU COSINE SIMILARITY</pattern>
+    <template>Cosine similarity adalah metrik yang kami gunakan untuk mengukur kemiripan semantik antara dua vektor kata dalam penelitian ini. Secara teknis, cosine similarity menghitung kosinus sudut antara dua vektor di dalam ruang multidimensional. Kami memilih metrik ini karena sangat efektif dalam konteks NLP, terutama ketika bekerja dengan embedding vectors dari model seperti IndoBERT. Keunggulan utama cosine similarity adalah fokusnya pada orientasi atau arah vektor, bukan magnitudonya. Ini berarti dua kata yang memiliki makna serupa akan menghasilkan vektor dengan arah yang mirip, menghasilkan cosine similarity tinggi mendekati 1. Dalam sistem kami, ketika menemukan kata slang yang tidak ada di kamus, kami menghitung cosine similarity antara embedding kata slang tersebut dengan semua kandidat kata formal. Kata formal dengan nilai similarity tertinggi dan melampaui threshold yang kami tetapkan akan dipilih sebagai hasil normalisasi. Pendekatan ini sangat powerful karena mampu menangkap kesamaan makna secara kontekstual, bukan hanya kesamaan bentuk atau ejaan kata.</template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN COSINE SIMILARITY</pattern>
+    <template><srai>APA ITU COSINE SIMILARITY</srai></template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN SOAL DATASET</pattern>
+    <template>Dataset yang kami gunakan dalam penelitian ini dikumpulkan dari komentar publik di platform Instagram yang merupakan salah satu media sosial paling populer di Indonesia. Kami memilih Instagram karena platform ini memiliki tingkat penggunaan bahasa gaul yang sangat tinggi dan representatif untuk komunikasi informal generasi muda. Data mentah dikumpulkan dan disimpan dalam format Excel untuk memudahkan proses anotasi dan preprocessing. Dataset ini memiliki struktur yang terorganisir dengan tiga kolom utama. Kolom pertama adalah instagram yang berisi teks komentar asli sesuai dengan yang ditulis pengguna. Kolom kedua adalah true_slang yang berisi daftar kata slang yang benar sebagai ground truth untuk tugas deteksi, yang kami anotasi secara manual. Kolom ketiga adalah true_normalized yang berisi hasil normalisasi manual yang kami buat sebagai ground truth untuk evaluasi kualitas normalisasi. Sebelum digunakan untuk training dan evaluation, data melalui serangkaian tahap preprocessing yang comprehensive melalui fungsi clean_text. Tahap pertama adalah cleaning noise, di mana kami menghapus elemen-elemen yang tidak relevan seperti URL, mention username dengan simbol at, hashtag, angka yang standalone, dan karakter special yang tidak berkontribusi pada makna semantik teks. Tahap kedua adalah case folding, mengonversi semua karakter menjadi lowercase untuk memastikan konsistensi dan mengurangi vocabulary size yang perlu dipelajari model. Tahap ketiga adalah normalisasi spasi, menghilangkan multiple whitespaces dan memastikan format yang konsisten di seluruh dataset. Proses preprocessing ini sangat krusial karena kualitas data input secara langsung mempengaruhi performa model. Data yang bersih dan terstruktur dengan baik memungkinkan model untuk belajar pattern yang lebih meaningful dan menghindari overfitting pada noise.</template>
+  </category>
+  
+  <category>
+    <pattern>DATASET</pattern>
+    <template><srai>JELASKAN SOAL DATASET</srai></template>
+  </category>
+  
+  <category>
+    <pattern>DATA APA YANG DIPAKAI</pattern>
+    <template><srai>JELASKAN SOAL DATASET</srai></template>
+  </category>
+  
+  <category>
+    <pattern>SUMBER DATA</pattern>
+    <template><srai>JELASKAN SOAL DATASET</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA ITU PREPROCESSING</pattern>
+    <template>Preprocessing adalah tahap krusial dalam pipeline NLP yang kami lakukan sebelum data diproses oleh model machine learning. Dalam konteks penelitian kami, preprocessing mencakup beberapa langkah penting yang terstruktur dan sistematis. Pertama, cleaning noise untuk menghilangkan elemen yang tidak berguna dan bisa mengganggu pembelajaran model, seperti URL yang tidak membawa informasi semantik, mention pengguna yang hanya merupakan identifier, hashtag yang sering redundan, angka standalone, dan simbol-simbol khusus yang tidak relevan. Kedua, case folding untuk mengonversi semua teks menjadi lowercase, menghilangkan inkonsistensi penulisan yang bisa membuat model menganggap Bagus dan bagus sebagai dua kata yang berbeda padahal maknanya sama. Ketiga, normalisasi spasi untuk memastikan tidak ada multiple spaces atau tab yang bisa mengganggu proses tokenisasi dan pemrosesan selanjutnya. Semua tahap ini diimplementasikan dalam fungsi clean_text yang secara otomatis dan konsisten memproses setiap baris data dalam dataset kami. Preprocessing yang baik itu seperti membersihkan bahan makanan sebelum dimasak hasilnya akan jauh lebih baik, konsisten, dan model bisa fokus belajar pattern yang benar-benar penting tanpa terdistraksi oleh noise yang tidak perlu.</template>
+  </category>
+  
+  <category>
+    <pattern>KENAPA PERLU PREPROCESSING</pattern>
+    <template><srai>APA ITU PREPROCESSING</srai></template>
+  </category>
+  
+  <category>
+    <pattern>TAHAP PREPROCESSING</pattern>
+    <template><srai>APA ITU PREPROCESSING</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA ITU CASE FOLDING</pattern>
+    <template>Case folding adalah salah satu tahap preprocessing penting yang kami lakukan dalam penelitian ini. Secara sederhana, case folding adalah proses mengkonversi semua karakter dalam teks menjadi huruf kecil atau lowercase. Tujuan utamanya adalah untuk menjaga konsistensi dan mengurangi kompleksitas vocabulary. Bayangkan jika model harus menganggap kata Bagus, bagus, BAGUS, dan BaGuS sebagai empat kata yang berbeda padahal maknanya identik. Ini akan sangat tidak efisien dan membuat model kesulitan belajar. Dengan case folding, semua variasi tersebut menjadi satu kata yang sama yaitu bagus. Dalam konteks bahasa gaul di media sosial, case folding sangat penting karena pengguna cenderung inkonsisten dalam penggunaan huruf kapital. Seseorang bisa menulis GW, Gw, atau gw untuk kata yang sama. Dengan case folding, semua variasi ini dinormalisasi menjadi bentuk yang sama, memudahkan model untuk mengenali pattern dan meningkatkan akurasi deteksi serta normalisasi.</template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN CASE FOLDING</pattern>
+    <template><srai>APA ITU CASE FOLDING</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>TEKNOLOGI APA YANG DIGUNAKAN</pattern>
+    <template>Implementasi sistem kami sepenuhnya dikembangkan menggunakan ekosistem Python, yang merupakan de facto standard untuk penelitian machine learning dan NLP modern. Kami memilih Python karena ekosistem library yang sangat kaya, mature, dan memiliki community support yang luar biasa. Library utama yang kami gunakan adalah Transformers dari Hugging Face, yang menyediakan interface yang sangat clean, well-documented, dan efisien untuk bekerja dengan model IndoBERT dan berbagai pre-trained model lainnya. Library ini memudahkan proses loading model, tokenization, dan extraction embedding vectors tanpa perlu implementasi from scratch. Selain itu, kami menggunakan NLTK atau Natural Language Toolkit untuk berbagai operasi preprocessing teks seperti tokenisasi yang language-aware, handling stopwords, dan berbagai text processing utilities lainnya. Pandas digunakan extensively untuk data manipulation, reading dan writing Excel files yang berisi dataset kami, serta melakukan berbagai transformations dan aggregations dengan syntax yang readable dan efficient. Untuk komputasi numerical dan operasi vektor, kami memanfaatkan NumPy yang merupakan foundation untuk scientific computing dalam Python. Sementara itu, scikit-learn digunakan untuk perhitungan cosine similarity, implementasi berbagai metrik evaluasi seperti precision, recall, dan F1-score, serta utilities lainnya untuk machine learning pipeline. Semua library ini terintegrasi dengan sangat baik dalam ekosistem Python, menciptakan development environment yang produktif, powerful, dan memungkinkan kami untuk fokus pada aspek penelitian tanpa terlalu banyak dealing dengan low-level implementations.</template>
+  </category>
+  
+  <category>
+    <pattern>PAKAI BAHASA PEMROGRAMAN APA</pattern>
+    <template><srai>TEKNOLOGI APA YANG DIGUNAKAN</srai></template>
+  </category>
+  
+  <category>
+    <pattern>LIBRARY APA SAJA</pattern>
+    <template><srai>TEKNOLOGI APA YANG DIGUNAKAN</srai></template>
+  </category>
+  
+  <category>
+    <pattern>TOOLS PENELITIAN</pattern>
+    <template><srai>TEKNOLOGI APA YANG DIGUNAKAN</srai></template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN LIBRARY YANG DIPAKAI</pattern>
+    <template>Dalam penelitian kami, setiap library dipilih dengan pertimbangan spesifik dan strategic. Library Transformers dari Hugging Face adalah backbone utama yang memberikan akses mudah ke IndoBERT dengan API yang sangat intuitif. Kami bisa load model pre-trained hanya dengan beberapa baris kode dan langsung mendapatkan high-quality embeddings tanpa training from scratch. NLTK membantu kami dalam berbagai task preprocessing, dari tokenisasi yang language-aware dan bisa handle berbagai edge cases, hingga handling punctuation dengan elegant. Pandas menjadi workhorse untuk data manipulation, memungkinkan kami read Excel files, clean data, transform, aggregate, dan perform various operations dengan syntax yang sangat readable mirip seperti SQL. NumPy memberikan foundation untuk semua operasi numerical, terutama dalam handling arrays dan matrix operations yang sangat efisien. Scikit-learn memberikan implementations yang robust dan well-tested untuk berbagai algorithms dan metrics, sehingga kami tidak perlu re-implement dari nol. Kombinasi library-library ini menciptakan ecosystem yang powerful dan memungkinkan rapid prototyping serta experimentation dalam penelitian kami.</template>
+  </category>
+  
+  <category>
+    <pattern>KENAPA PAKAI PYTHON</pattern>
+    <template>Kami memilih Python sebagai bahasa pemrograman utama karena beberapa alasan fundamental. Python adalah lingua franca dalam dunia machine learning dan NLP, dengan ecosystem libraries yang sangat kaya dan mature. Hampir semua state-of-the-art research dalam NLP menggunakan Python, sehingga akses ke resources, tutorials, dan community support sangat luas. Python juga memiliki syntax yang clean dan readable, memudahkan collaboration dalam tim dan reproduksibilitas penelitian. Yang paling penting, Python memiliki library seperti Transformers, PyTorch, TensorFlow, dan scikit-learn yang merupakan industry standard dan digunakan oleh researcher di seluruh dunia. Development time dengan Python juga jauh lebih cepat dibanding bahasa compiled seperti Java atau C++, memungkinkan kami untuk iterate dan experiment dengan cepat. Terakhir, Python memiliki excellent support untuk data science dan scientific computing melalui NumPy, Pandas, dan Matplotlib, yang sangat penting untuk preprocessing data dan visualisasi results.</template>
+  </category>
+  
+
+  <category>
+    <pattern>BAGAIMANA SISTEM DIEVALUASI</pattern>
+    <template>Evaluasi sistem kami dilakukan secara comprehensive menggunakan dua set metrik utama yang mengukur aspek berbeda dari performa sistem. Set metrik pertama adalah untuk evaluasi deteksi slang, di mana kami menggunakan Precision, Recall, dan F1-score untuk mengukur kemampuan sistem dalam mengidentifikasi kata slang dengan benar. Precision mengukur seberapa banyak kata yang dideteksi sebagai slang memang benar-benar slang berdasarkan ground truth, dihitung dengan formula TP dibagi TP plus FP. Recall mengukur seberapa banyak kata slang dari ground truth yang berhasil dideteksi oleh sistem, dengan formula TP dibagi TP plus FN. F1-score adalah harmonic mean dari Precision dan Recall, memberikan single score yang balanced untuk performa deteksi. Set metrik kedua adalah untuk evaluasi kualitas normalisasi menggunakan BLEU Score atau Bilingual Evaluation Understudy. BLEU Score menilai kualitas normalisasi dengan menghitung tumpang tindih n-gram antara output sistem dengan teks referensi yang sudah dinormalisasi secara manual. Semakin tinggi BLEU Score, semakin mirip hasil normalisasi sistem dengan referensi manual, mengindikasikan kualitas normalisasi yang baik. Kombinasi kedua set metrik ini memberikan gambaran komprehensif tentang performa sistem, baik dari sisi kemampuan deteksi maupun kualitas hasil normalisasi.</template>
+  </category>
+  
+  <category>
+    <pattern>METRIK EVALUASI</pattern>
+    <template><srai>BAGAIMANA SISTEM DIEVALUASI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>CARA EVALUASI</pattern>
+    <template><srai>BAGAIMANA SISTEM DIEVALUASI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA ITU PRECISION</pattern>
+    <template>Precision adalah salah satu metrik penting yang kami gunakan untuk mengevaluasi kemampuan deteksi slang dalam sistem. Secara sederhana, Precision menjawab pertanyaan dari semua kata yang sistem deteksi sebagai slang, berapa persen yang benar-benar slang. Formula matematisnya adalah TP atau True Positive dibagi dengan TP plus FP atau False Positive. True Positive adalah kata yang benar dideteksi sebagai slang, sedangkan False Positive adalah kata formal yang salah dideteksi sebagai slang. Precision yang tinggi berarti sistem jarang salah menandai kata formal sebagai slang, yang penting untuk menghindari normalisasi yang tidak perlu. Dalam konteks penelitian kami, Precision yang rendah bisa disebabkan oleh sistem yang terlalu agresif dalam menandai kata sebagai slang, termasuk kata formal yang jarang digunakan atau typo.</template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN PRECISION</pattern>
+    <template><srai>APA ITU PRECISION</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA ITU RECALL</pattern>
+    <template>Recall adalah metrik evaluasi yang mengukur kelengkapan deteksi slang dalam sistem kami. Recall menjawab pertanyaan dari semua kata slang yang sebenarnya ada dalam teks berdasarkan ground truth, berapa persen yang berhasil dideteksi oleh sistem. Formula matematisnya adalah TP atau True Positive dibagi dengan TP plus FN atau False Negative. False Negative adalah kata slang yang tidak terdeteksi atau missed oleh sistem. Recall yang tinggi berarti sistem mampu menangkap sebagian besar kata slang yang ada, yang sangat penting untuk normalisasi yang comprehensive. Dalam penelitian kami, Recall yang rendah terutama disebabkan oleh keterbatasan cakupan kamus slang, sehingga banyak kata slang baru atau variant yang tidak terdeteksi. Ini adalah salah satu challenge utama yang kami identifikasi untuk perbaikan di masa depan.</template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN RECALL</pattern>
+    <template><srai>APA ITU RECALL</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA ITU F1 SCORE</pattern>
+    <template>F1-score adalah metrik evaluasi yang sangat penting dalam penelitian kami karena memberikan single score yang balanced antara Precision dan Recall. F1-score adalah harmonic mean dari Precision dan Recall, dengan formula 2 kali Precision kali Recall dibagi Precision plus Recall. Kami menggunakan harmonic mean bukan arithmetic mean karena harmonic mean lebih sensitif terhadap nilai yang rendah, sehingga sistem tidak bisa mendapatkan F1-score tinggi hanya dengan mengandalkan salah satu metrik saja. F1-score berkisar dari 0 hingga 1, di mana 1 adalah perfect score. Dalam konteks penelitian kami, F1-score memberikan gambaran overall tentang seberapa baik sistem dalam mendeteksi slang secara balanced, mempertimbangkan baik akurasi deteksi maupun kelengkapan coverage. Skor F1 yang kami peroleh adalah 0.3125, yang mengindikasikan masih ada room for improvement yang signifikan, terutama dalam hal perluasan kamus dan perbaikan dataset ground truth.</template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN F1 SCORE</pattern>
+    <template><srai>APA ITU F1 SCORE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA ITU BLEU SCORE</pattern>
+    <template>BLEU Score atau Bilingual Evaluation Understudy adalah metrik yang kami gunakan untuk mengevaluasi kualitas hasil normalisasi teks. Meskipun awalnya dikembangkan untuk mengevaluasi machine translation, BLEU Score sangat applicable untuk task normalisasi karena prinsipnya sama mengukur seberapa mirip output sistem dengan referensi yang ideal. BLEU Score bekerja dengan menghitung tumpang tindih n-gram antara teks yang dihasilkan sistem dengan teks referensi manual. N-gram bisa berupa unigram atau single word, bigram atau dua kata berurutan, trigram, dan seterusnya. Semakin banyak n-gram yang match, semakin tinggi BLEU Score, yang mengindikasikan output sistem lebih mirip dengan referensi baik dari segi pilihan kata maupun struktur kalimat. BLEU Score berkisar dari 0 hingga 1, di mana 1 berarti perfect match dengan referensi. Dalam penelitian kami, rata-rata BLEU Score yang kami peroleh adalah 0.84, yang terbilang tinggi dan mengindikasikan bahwa kalimat yang dihasilkan sistem memiliki kesamaan semantik dan struktural yang kuat dengan kalimat formal yang diharapkan. Ini menunjukkan bahwa meskipun deteksi slang masih perlu improvement, kualitas normalisasi untuk kata yang terdeteksi sudah cukup baik.</template>
+  </category>
+  
+  <category>
+    <pattern>JELASKAN BLEU SCORE</pattern>
+    <template><srai>APA ITU BLEU SCORE</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>BERAPA HASIL F1 SCORE</pattern>
+    <template>Hasil F1-score yang kami peroleh dalam penelitian ini adalah 0.3125 berdasarkan evaluasi terhadap dataset komentar Instagram. Skor ini mengindikasikan performa dasar dari sistem dengan kamus dan data yang ada saat ini. Meskipun angka ini terlihat rendah, hasil ini memberikan baseline yang valuable dan insights penting tentang tantangan yang dihadapi sistem. Skor ini mencerminkan trade-off antara Precision yang kami capai sebesar 0.3235 dan Recall sebesar 0.3467. Hasil ini menunjukkan bahwa sistem masih dalam tahap early development dan ada banyak room for improvement, terutama dalam hal perluasan cakupan kamus slang dan peningkatan kualitas dataset ground truth.</template>
+  </category>
+  
+  <category>
+    <pattern>HASIL F1 SCORE</pattern>
+    <template><srai>BERAPA HASIL F1 SCORE</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KENAPA F1 SCORE RENDAH</pattern>
+    <template>Hasil F1-score yang rendah sebesar 0.3125 disebabkan oleh beberapa tantangan fundamental yang kami identifikasi dalam penelitian ini. Pertama dan yang paling signifikan adalah keterbatasan cakupan kamus slang. Kamus yang kami gunakan berisi lebih dari 100 kata slang populer, namun ternyata bahasa gaul di media sosial berkembang sangat dinamis dengan munculnya variant baru, abbreviasi kreatif, dan slang regional yang belum tercakup. Ini menyebabkan banyak kata slang baru tidak terdeteksi, yang secara langsung mempengaruhi Recall dan menurunkan F1-score. Kedua, strategi deteksi yang kami gunakan terkadang keliru menandai kata formal yang jarang dipakai atau kata formal dengan ejaan tidak umum sebagai slang, yang mempengaruhi Precision. Ketiga, kualitas dan kuantitas dataset ground truth yang terbatas juga berkontribusi pada hasil ini. Dataset yang lebih besar dan lebih diverse akan memberikan coverage yang lebih baik. Yang penting kami catat adalah tantangan utama bukan pada arsitektur sistem hibrida yang kami rancang, melainkan pada kualitas dan kuantitas data pendukung. Ini adalah insight valuable yang mengarahkan fokus pengembangan selanjutnya pada perluasan kamus dan improvement dataset, bukan redesign arsitektur fundamental.</template>
+  </category>
+  
+  <category>
+    <pattern>PENYEBAB F1 SCORE RENDAH</pattern>
+    <template><srai>KENAPA F1 SCORE RENDAH</srai></template>
+  </category>
+  
+  <category>
+    <pattern>BERAPA SKOR BLEU</pattern>
+    <template>Rata-rata BLEU Score yang kami peroleh dalam penelitian ini adalah 0.84, yang merupakan hasil yang sangat encouraging. Skor ini terbilang tinggi dan mengindikasikan bahwa kalimat yang dihasilkan oleh sistem memiliki kesamaan semantik dan struktural yang kuat dengan kalimat formal yang diharapkan berdasarkan referensi manual. BLEU Score 0.84 menunjukkan bahwa untuk kata-kata slang yang berhasil terdeteksi, sistem mampu melakukan normalisasi dengan kualitas yang baik. Hasil ini mengindikasikan bahwa kombinasi pendekatan kamus dan IndoBERT efektif dalam memilih kata formal yang tepat sebagai replacement untuk kata slang. Kontras antara F1-score yang rendah 0.3125 dan BLEU Score yang tinggi 0.84 memberikan insight penting sistem kami memiliki challenge dalam deteksi completeness, namun ketika berhasil mendeteksi dan menormalisasi, hasilnya berkualitas baik. Ini menegaskan bahwa arsitektur normalisasi sudah solid, dan fokus improvement seharusnya pada peningkatan coverage deteksi melalui perluasan kamus dan dataset.</template>
+  </category>
+  
+  <category>
+    <pattern>HASIL BLEU SCORE</pattern>
+    <template><srai>BERAPA SKOR BLEU</srai></template>
+  </category>
+  
+  <category>
+    <pattern>SKOR BLEU BERAPA</pattern>
+    <template><srai>BERAPA SKOR BLEU</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>APA KEKUATAN SISTEM INI</pattern>
+    <template>Kekuatan utama dari sistem yang kami kembangkan terletak pada pendekatan hibrida yang menggabungkan rule-based dan deep learning secara intelligent. Kombinasi kamus dan IndoBERT memberikan keuntungan ganda yang sangat powerful. Kamus menangani mayoritas slang umum yang sering muncul dengan sangat cepat dan efisien tanpa perlu komputasi deep learning yang expensive. Ini membuat sistem sangat scalable untuk production environment. Sementara itu, IndoBERT memberikan jaring pengaman yang cerdas untuk kata-kata baru atau variant yang belum pernah dilihat sebelumnya. Model ini mampu memahami konteks kalimat dan mencari kata formal yang paling mirip secara semantik, bukan hanya secara orthographic. Kekuatan lain adalah fleksibilitas sistem kamus bisa di-update secara incremental tanpa perlu retrain model, sementara komponen IndoBERT memberikan robustness untuk handling edge cases. Hasil BLEU Score yang tinggi sebesar 0.84 juga membuktikan bahwa kualitas normalisasi yang dihasilkan sistem sangat baik dan comparable dengan normalisasi manual. Arsitektur yang modular juga memudahkan future improvements dan integration dengan sistem NLP lainnya.</template>
+  </category>
+  
+  <category>
+    <pattern>KEKUATAN SISTEM</pattern>
+    <template><srai>APA KEKUATAN SISTEM INI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KEUNGGULAN SISTEM</pattern>
+    <template><srai>APA KEKUATAN SISTEM INI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA KELEMAHAN SISTEM INI</pattern>
+    <template>Kelemahan utama sistem yang kami identifikasi adalah masih menghadapi kesulitan pada kasus slang yang sangat baru atau memiliki makna yang highly ambiguous. Contoh konkritnya adalah kata-kata seperti mager yang merupakan singkatan dari males gerak atau gabut yang berarti gak ada kegiatan. Kata-kata ini terkadang gagal dinormalisasi dengan benar jika tidak ada padanan formal yang memiliki kemiripan semantik tinggi di dalam kamus kandidat formal. Kelemahan kedua adalah ketergantungan pada kualitas dan coverage kamus slang. Bahasa gaul berkembang sangat cepat dan dinamis, dengan munculnya slang baru setiap saat terutama yang berasal dari platform berbeda atau komunitas spesifik. Kamus statis kami kesulitan mengikuti perkembangan ini tanpa update manual yang frequent. Kelemahan ketiga adalah sistem belum mampu menangani slang yang context-dependent, di mana makna kata berubah tergantung konteks penggunaan. Kelemahan keempat adalah performa deteksi yang masih rendah dengan F1-score 0.3125, terutama disebabkan oleh False Negatives yang tinggi. Terakhir, sistem belum optimal dalam menangani slang yang merupakan hasil code-mixing dengan bahasa asing seperti bahasa Inggris atau bahasa daerah. Semua kelemahan ini menjadi roadmap untuk improvement di iterasi berikutnya.</template>
+  </category>
+  
+  <category>
+    <pattern>KELEMAHAN SISTEM</pattern>
+    <template><srai>APA KELEMAHAN SISTEM INI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KEKURANGAN SISTEM</pattern>
+    <template><srai>APA KELEMAHAN SISTEM INI</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>APA KESIMPULAN PENELITIAN</pattern>
+    <template>Kesimpulan dari penelitian yang kami lakukan adalah bahwa kami telah berhasil merancang dan mengimplementasikan sebuah arsitektur hibrida yang innovative untuk deteksi dan normalisasi bahasa gaul dalam teks bahasa Indonesia. Arsitektur ini menggabungkan pendekatan berbasis kamus dengan model Transformer IndoBERT secara effective. Namun, hasil evaluasi awal menunjukkan bahwa kinerja sistem masih berada pada tahap baseline, dengan perolehan F1-score sebesar 0.3125 untuk tugas deteksi slang. Kinerja yang belum optimal ini mengindikasikan bahwa tantangan utama tidak terletak pada arsitektur sistem yang kami rancang, melainkan pada kualitas dan kuantitas data pendukung yaitu keterbatasan cakupan kamus slang dan dataset ground truth yang digunakan untuk evaluasi. Di sisi positif, BLEU Score yang tinggi sebesar 0.84 menunjukkan bahwa untuk kata yang berhasil terdeteksi, kualitas normalisasinya sudah sangat baik dan comparable dengan normalisasi manual. Meskipun demikian, penelitian ini berhasil menetapkan sebuah baseline performance yang valuable dan mengidentifikasi area-area krusial yang memerlukan perbaikan prioritas untuk pengembangan selanjutnya.</template>
+  </category>
+  
+  <category>
+    <pattern>KESIMPULAN PENELITIAN</pattern>
+    <template><srai>APA KESIMPULAN PENELITIAN</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KESIMPULANNYA APA</pattern>
+    <template><srai>APA KESIMPULAN PENELITIAN</srai></template>
+  </category>
+  
+  <category>
+    <pattern>APA SARAN UNTUK PENELITIAN SELANJUTNYA</pattern>
+    <template>Untuk pengembangan selanjutnya, kami mengidentifikasi beberapa fokus improvement yang prioritas. Pertama dan yang paling critical adalah memperluas kamus slang secara signifikan, idealnya mencapai ribuan entries dengan coverage yang comprehensive untuk berbagai domain, region, dan platform media sosial. Ini bisa dilakukan melalui web scraping otomatis, crowdsourcing, atau mining dari korpus media sosial yang besar. Kedua, memperbaiki dan memperbesar dataset anotasi ground truth untuk evaluation yang lebih reliable. Dataset yang lebih diverse akan memberikan better representation dari variasi bahasa gaul yang ada. Ketiga, melakukan fine-tuning pada model IndoBERT menggunakan data yang lebih besar dan berkualitas, khususnya data yang mengandung banyak bahasa informal dan slang, sehingga model lebih sensitif terhadap context bahasa gaul. Keempat, mengimplementasikan mechanism untuk automatic dictionary update berdasarkan frequency analysis dari social media corpus. Kelima, mengeksplorasi ensemble methods atau model yang lebih advanced seperti GPT-based models yang mungkin memberikan better context understanding. Keenam, melakukan extensive testing pada berbagai platform media sosial berbeda untuk memastikan generalizability. Langkah-langkah ini diharapkan dapat meningkatkan kemampuan sistem secara drastis dalam menangani variasi bahasa gaul yang dinamis di media sosial Indonesia.</template>
+  </category>
+  
+  <category>
+    <pattern>SARAN PENELITIAN</pattern>
+    <template><srai>APA SARAN UNTUK PENELITIAN SELANJUTNYA</srai></template>
+  </category>
+  
+  <category>
+    <pattern>FUTURE WORK</pattern>
+    <template><srai>APA SARAN UNTUK PENELITIAN SELANJUTNYA</srai></template>
+  </category>
+  
+  <category>
+    <pattern>PENGEMBANGAN SELANJUTNYA</pattern>
+    <template><srai>APA SARAN UNTUK PENELITIAN SELANJUTNYA</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>BERIKAN CONTOH NORMALISASI</pattern>
+    <template>Tentu! Kami punya beberapa contoh hasil normalisasi yang menunjukkan bagaimana sistem bekerja. Contoh pertama, komentar asli gue gasuka vibes nya bgt sumpah dinormalisasi menjadi saya tidak suka suasananya banget sungguh. Contoh kedua, anjir lucu bgt ni vid menjadi sangat lucu video ini. Contoh ketiga, gk ngerti ama omongan dia menjadi tidak mengerti dengan omongan dia. Contoh keempat, keren bgt, gw pgn beli jg dinormalisasi menjadi keren banget, saya ingin beli juga. Dari contoh-contoh ini terlihat bahwa sistem mampu menangani berbagai jenis slang seperti abbreviasi gue menjadi saya, gk menjadi tidak, kontraksi gasuka menjadi tidak suka, slang populer bgt menjadi banget, dan bahkan kata informal seperti pgn menjadi ingin. Hasil normalisasi mempertahankan makna original sambil mengkonversi ke bahasa formal yang proper. Ini mendemonstrasikan effectiveness dari pendekatan hibrida kami dalam real-world scenarios.</template>
+  </category>
+  
+  <category>
+    <pattern>CONTOH HASIL</pattern>
+    <template><srai>BERIKAN CONTOH NORMALISASI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>CONTOH NORMALISASI</pattern>
+    <template><srai>BERIKAN CONTOH NORMALISASI</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>KATA SLANG APA YANG SERING MUNCUL</pattern>
+    <template>Berdasarkan temuan kami dalam penelitian ini, kata-kata slang yang paling sering muncul dalam dataset Instagram adalah bgt yang merupakan singkatan dari banget, yg singkatan dari yang, gak atau gk yang berarti tidak, dan gw yang merupakan slang dari saya atau aku. Frekuensi tinggi kata-kata ini menegaskan pentingnya memiliki kamus yang solid untuk efficiency. Selain itu, kami juga menemukan kata-kata seperti lu untuk kamu, emg untuk memang, dr untuk dari, sm untuk sama, tp untuk tapi, jg untuk juga, dan lagi untuk sedang. Variasi ejaan juga common, misalnya gak bisa ditulis sebagai ga, gk, atau gag. Pola ini menunjukkan bahwa pengguna media sosial cenderung menggunakan abbreviasi dan pemendekan kata yang konsisten dan berulang, yang membuat rule-based approach dengan kamus sangat effective untuk handling majority cases. Namun, kami juga menemukan long tail distribution di mana ada banyak slang yang jarang muncul namun tetap perlu di-handle, yang menjustifikasi kebutuhan komponen IndoBERT untuk generalization.</template>
+  </category>
+  
+  <category>
+    <pattern>SLANG POPULER</pattern>
+    <template><srai>KATA SLANG APA YANG SERING MUNCUL</srai></template>
+  </category>
+  
+  <category>
+    <pattern>SLANG YANG SERING DIPAKAI</pattern>
+    <template><srai>KATA SLANG APA YANG SERING MUNCUL</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>APA TANTANGAN DALAM PENELITIAN INI</pattern>
+    <template>Tantangan terbesar yang kami hadapi dalam penelitian ini adalah sifat dinamis dan ever-evolving dari bahasa gaul di media sosial. Bahasa gaul berkembang dengan sangat cepat, dengan munculnya slang baru, variant, dan code-mixing yang terus berubah. Tantangan kedua adalah keterbatasan resources untuk building comprehensive dictionary dan annotated dataset. Manual annotation sangat time-consuming dan membutuhkan native speakers yang familiar dengan berbagai variant bahasa gaul. Tantangan ketiga adalah handling ambiguity beberapa kata slang bisa memiliki multiple meanings tergantung context, dan membedakan apakah sebuah kata adalah slang atau typo atau intentional misspelling sangat challenging. Tantangan keempat adalah variasi regional dan platform-specific slang yang digunakan di TikTok berbeda dengan Twitter atau Instagram, dan slang di Jakarta berbeda dengan Surabaya atau Medan. Tantangan kelima adalah computational efficiency ketika scaling up, proses embedding extraction dengan IndoBERT untuk setiap unknown word bisa menjadi bottleneck untuk real-time applications. Tantangan keenam adalah evaluation methodology mendefinisikan ground truth yang objective untuk normalisasi bisa subjective karena bisa ada multiple valid normalizations untuk satu slang term. Semua tantangan ini membuat research problem ini complex dan menarik, dengan banyak opportunities untuk contributions di masa depan.</template>
+  </category>
+  
+  <category>
+    <pattern>TANTANGAN PENELITIAN</pattern>
+    <template><srai>APA TANTANGAN DALAM PENELITIAN INI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KESULITAN PENELITIAN</pattern>
+    <template><srai>APA TANTANGAN DALAM PENELITIAN INI</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>APA APLIKASI PRAKTIS DARI PENELITIAN INI</pattern>
+    <template>Aplikasi praktis dari penelitian kami sangat luas dan impactful. Pertama, sistem ini bisa menjadi preprocessing module untuk sentiment analysis systems yang lebih accurate. Dengan menormalisasi text terlebih dahulu, sentiment classifier bisa better understand makna sebenarnya dari reviews atau comments di media sosial. Kedua, chatbot dan customer service automation bisa lebih effectively memahami queries dari customers yang menggunakan bahasa informal. Ketiga, content moderation systems untuk detecting hate speech atau inappropriate content bisa improved karena banyak hate speech menggunakan slang atau euphemism yang perlu dinormalisasi dulu. Keempat, market research dan brand monitoring companies bisa better analyze consumer opinions di social media dengan understanding slang yang digunakan. Kelima, educational technology bisa menggunakan sistem ini untuk helping students improve their formal writing dengan identifying dan correcting informal language. Keenam, government agencies dan policy makers bisa better understand public sentiment dari social media discourse. Ketujuh, news aggregators dan media monitoring tools bisa more accurately categorize dan summarize content yang mengandung slang. Sistem kami memberikan foundation yang bisa di-integrate ke berbagai downstream NLP applications untuk improving their performance ketika dealing dengan Indonesian informal text.</template>
+  </category>
+  
+  <category>
+    <pattern>APLIKASI PRAKTIS</pattern>
+    <template><srai>APA APLIKASI PRAKTIS DARI PENELITIAN INI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>KEGUNAAN PENELITIAN</pattern>
+    <template><srai>APA APLIKASI PRAKTIS DARI PENELITIAN INI</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>SIAPA PENULIS PENELITIAN INI</pattern>
+    <template>Penelitian ini dilakukan oleh tim kami yang terdiri dari dua orang. Saya Kent Dylan Sanjaya dan rekan saya Vincent Wijaya, keduanya dari Program Studi Teknik Informatika Universitas Tarumanagara, Jakarta. Kami melakukan penelitian ini sebagai bagian dari studi kami, dengan fokus pada Natural Language Processing dan khususnya pada challenges yang dihadapi oleh bahasa Indonesia dalam era digital. Kami berdua sangat passionate tentang NLP dan melihat normalisasi bahasa gaul sebagai problem yang sangat relevant dan impactful untuk komunitas NLP Indonesia. Penelitian ini adalah hasil kolaborasi intensive kami dalam merancang arsitektur, mengimplementasikan sistem, collecting dan annotating data, serta melakukan evaluation yang comprehensive.</template>
+  </category>
+  
+  <category>
+    <pattern>SIAPA PENELITINYA</pattern>
+    <template><srai>SIAPA PENULIS PENELITIAN INI</srai></template>
+  </category>
+  
+  <category>
+    <pattern>TIM PENELITI</pattern>
+    <template><srai>SIAPA PENULIS PENELITIAN INI</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>APA PENELITIAN TERKAIT SEBELUMNYA</pattern>
+    <template>Kami melakukan literature review yang extensive untuk memahami state-of-the-art dalam normalisasi teks slang. Beberapa penelitian terkait yang menjadi foundation kami antara lain work dari Hasanah dkk yang mengembangkan metode hibrida berbasis aturan dan machine learning untuk normalisasi slang di Twitter, namun metode tersebut masih bergantung pada kamus statis yang tidak adaptif. Penelitian dari Wilie dkk tentang IndoBERT dan IndoNLU memberikan benchmarking untuk berbagai task NLP bahasa Indonesia dan membuktikan superiority IndoBERT. Saputra dkk melakukan penerapan normalisasi slang word terhadap sentiment analysis menggunakan SVM, yang menunjukkan importance dari preprocessing untuk downstream tasks. Lestari dkk mengembangkan text normalization framework untuk Bahasa Indonesia menggunakan deep learning. Sindu dkk melakukan identifikasi dan normalisasi teks slang dengan FastText pada Twitter. Penelitian-penelitian ini memberikan valuable insights tentang berbagai approaches dan challenges, namun kami melihat opportunity untuk combining rule-based efficiency dengan deep learning flexibility melalui hybrid architecture yang kami usulkan, specifically leveraging IndoBERT untuk context understanding yang better.</template>
+  </category>
+  
+  <category>
+    <pattern>PENELITIAN TERKAIT</pattern>
+    <template><srai>APA PENELITIAN TERKAIT SEBELUMNYA</srai></template>
+  </category>
+  
+  <category>
+    <pattern>REFERENSI PENELITIAN</pattern>
+    <template><srai>APA PENELITIAN TERKAIT SEBELUMNYA</srai></template>
+  </category>
+  
+  
+  <category>
+    <pattern>*</pattern>
+    <template>
+      <random>
+        <li>Maaf, saya kurang paham maksud Anda. Bisa dijelaskan dengan cara lain?</li>
+        <li>Hmm, menarik. Bisa cerita lebih detail?</li>
+        <li>Saya mendengarkan. Silakan lanjutkan.</li>
+        <li>Oke, saya catat. Ada lagi yang mau disampaikan?</li>
+      </random>
+    </template>
+  </category>
+</aiml>
